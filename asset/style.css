@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Twentieth Century W01";
-    background-image: url('/asset/img/programmer.jpg');
+    background-image: url('asset/img/programmer.jpg');
     background-size: cover;
     background-attachment: fixed;
 
