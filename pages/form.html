@@ -1,254 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/style.css" />
     <style>
-    body {
-    margin: 0;
-    padding: 0;
-    font-family: "Twentieth Century W01";
-    background-image: url('/asset/img/programmer.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Twentieth Century W01";
+        background-image: url("/asset/img/programmer.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
 
-}
+      .navigasi {
+        background-color: rgb(86, 76, 221);
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+      }
 
-.navigasi {
-    background-color: rgb(86, 76, 221);
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
+      .nama {
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
 
-}
+      .firstname {
+        color: rgb(0, 0, 0);
+        padding-left: 8px;
+        font-weight: 700;
+      }
 
-.nama {
-    display: flex;
-    flex-direction: row;
-    padding-left: 30px;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+      .lastname {
+        color: whitesmoke;
+        font-weight: 700;
+      }
 
-.firstname {
-    color: rgb(0, 0, 0);
-    padding-left: 8px;
-    font-weight: 700;
-}
+      .atasan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+        font-size: 16px;
+      }
 
-.lastname {
-    color: whitesmoke;
-    font-weight: 700;
-}
+      .atasan > li {
+        list-style-type: none;
+        padding-right: 20px;
+        flex-wrap: wrap;
+      }
 
-.atasan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 30px;
-    font-size: 16px;
-}
+      .atasan > li > a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 550;
+        display: block;
+      }
 
-.atasan>li {
-    list-style-type: none;
-    padding-right: 20px;
-    flex-wrap: wrap;
-}
+      .atasan > li > a:hover {
+        color: black;
+        transition: all 0.3s ease-in-out;
 
-.atasan>li>a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: 550;
-    display: block;
+        border-radius: 5px;
+      }
 
+      .atasan li > img {
+        width: 45px;
+        border-radius: 50px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-}
+      .beranda {
+        color: black !important;
+      }
 
-.atasan>li>a:hover {
+      .akun {
+        background-color: lightgray;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+      }
 
-    color: black;
-    transition: all .3s ease-in-out;
+      .tel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
 
-    border-radius: 5px;
-}
+      .tel > span {
+        font-size: 15px;
+        font-weight: 550;
+      }
 
-.atasan li>img {
-    width: 45px;
-    border-radius: 50px;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
+      .tel > span > a {
+        text-decoration: none;
+        color: rgb(86, 76, 221);
+      }
 
-.beranda {
-    color: black !important;
-}
+      .tel > ul > li > a > img {
+        width: 30px;
+      }
 
-.akun {
-    background-color: lightgray;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-}
+      .tel > ul > li {
+        list-style-type: none;
+        padding-left: 30px;
+      }
 
-.tel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+      .tel > ul {
+        display: flex;
+        flex-direction: row;
+      }
+      .deskripsi {
+        background-color: lightgray;
 
-.tel>span {
-    font-size: 15px;
-    font-weight: 550;
-}
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Montserrat";
+      }
 
-.tel>span>a {
-    text-decoration: none;
-    color: rgb(86, 76, 221);
-}
+      .deskripsi > p {
+        margin-left: 70px;
+        margin-right: 50px;
+      }
 
-.tel>ul>li>a>img {
-    width: 30px;
-}
+      .presiden {
+        padding: 0;
+        margin: 0;
+      }
 
-.tel>ul>li {
-    list-style-type: none;
-    padding-left: 30px;
+      .deskripsi1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+        text-align: justify;
+      }
 
-}
+      .deskripsi2 {
+        width: 500px;
+        padding-left: 0;
+      }
 
-.tel>ul {
-    display: flex;
-    flex-direction: row;
-}
-.deskripsi {
-    background-color: lightgray;
+      .deskripsi2 > li {
+        padding-bottom: 20px;
+      }
 
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Montserrat';
-}
+      .deskripsi3 {
+        width: 500px;
+      }
 
-.deskripsi>p {
-    margin-left: 70px;
-    margin-right: 50px;
-}
-
-.presiden {
-    padding: 0;
-    margin: 0;
-}
-
-.deskripsi1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 0;
-    text-align: justify;
-}
-
-.deskripsi2 {
-    width: 500px;
-    padding-left: 0;
-}
-
-.deskripsi2>li {
-    padding-bottom: 20px;
-}
-
-.deskripsi3 {
-    width: 500px;
-}
-
-.deskripsi3>li {
-    padding-bottom: 15px;
-}
-
-</style>
+      .deskripsi3 > li {
+        padding-bottom: 15px;
+      }
+    </style>
 
     <title>Form</title>
   </head>
   <body>
-        <div>
-        <nav>
-            <div class="akun">
-                <div class="tel">
-                    <span>Tel: +62 85334 603 525 | <a href="mailto:srobby109@gmail.com">srobby109@gmail.com</a></span>
-                    <ul>
-                        <li><a href="https://www.instagram.com/m.robby.sgr__/"><img src="../asset/img/instagram.png" alt=""></a></li>
-                        <li><a href="https://www.tiktok.com/@sabi23422"><img src="../asset/img/tiktok.png" alt=""></a></li>
-                        <li><a href="https://www.linkedin.com/in/mochammad-robbyy-sugara-344a06258/"><img src="../asset/img/linked.png" alt=""></a></li>
-                        <li><a href="mailto:srobby109@gmail.com"><img src="../asset/img/gmail.png" alt="..."></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="nav">
-            <nav class="navigasi">
-                <div class="nama">
-                    <div class="firstname">Info</div>
-                    <div class="lastname">Com</div>
-                </div>
-                <ul class="atasan">
-                    <li><a href="../index.html" class="beranda">Beranda</a></li>
-                    <li><a href="../pages/form.html" class="beranda">Form</a></li>
-
-                    <li><img src="../asset/img/informatika.jfif" alt="..." ></li>
-                </ul>
-            </nav>
+    <div>
+      <nav>
+        <div class="akun">
+          <div class="tel">
+            <span
+              >Tel: +62 85334 603 525 |
+              <a href="mailto:srobby109@gmail.com">srobby109@gmail.com</a></span
+            >
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/m.robby.sgr__/"
+                  ><img src="../asset/img/instagram.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@sabi23422"
+                  ><img src="../asset/img/tiktok.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mochammad-robbyy-sugara-344a06258/"
+                  ><img src="../asset/img/linked.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="mailto:srobby109@gmail.com"
+                  ><img src="../asset/img/gmail.png" alt="..."
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div class="nav">
+        <nav class="navigasi">
+          <div class="nama">
+            <div class="firstname">Info</div>
+            <div class="lastname">Com</div>
+          </div>
+          <ul class="atasan">
+            <li><a href="../index.html" class="beranda">Beranda</a></li>
+            <li><a href="../pages/form.html" class="beranda">Form</a></li>
+            <li><a href="../pages/login.html" class="beranda">Login</a></li>
+
+            <li><img src="../asset/img/informatika.jfif" alt="..." /></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="deskripsi">
-    <h1>Form Pendaftaran Studi Independen 2023 - PT Arkatama Multi Solusindo</h1>
-    <form action="" method="POST">
-
-
-      <label for="nama">Nama</label><br>
+      <h1>
+        Form Pendaftaran Studi Independen 2023 - PT Arkatama Multi Solusindo
+      </h1>
+      <form action="" method="POST">
+        <label for="nama">Nama</label><br />
         <input type="text" placeholder="Nama Lengkap" id="nama" />
 
-        <br>
-      <label for="email">Email</label><br>
-        <input type="text" placeholder="Email Aktif" id="email" /><br>
-      
-      <label for="hp">No HP</label><br>
-        <input type="text" placeholder="No HP Aktif" id="hp" /><br>
-      
-      <label for="JK">Jenis Kelamin</label><br>
-        <input type="radio" name="JK"/> Laki - laki <br>
-          <input type="radio" name="JK"/> Perempuan <br>
+        <br />
+        <label for="email">Email</label><br />
+        <input type="text" placeholder="Email Aktif" id="email" /><br />
 
-        
-        <label>Jabatan</label><br>
-            <select>
-                <option disabled>Pilih</option>
-                <option>admin</option>
-                <option>superadmin</option>
-                <option>user</option>
+        <label for="hp">No HP</label><br />
+        <input type="text" placeholder="No HP Aktif" id="hp" /><br />
 
-            </select><br>
+        <label for="JK">Jenis Kelamin</label><br />
+        <input type="radio" name="JK" /> Laki - laki <br />
+        <input type="radio" name="JK" /> Perempuan <br />
 
-        <label>Hobi</label><br>
-            <input type="checkbox"> Membaca  <br>
-            <input type="checkbox"> Menulis <br>
-            <input type="checkbox"> Menyanyi <br>
-            <input type="checkbox"> Olahraga <br>
-                  
-      <label>Alamat</label><br>
-        <textarea placeholder="Alamat Lengkap"></textarea><br>
-      
-      <label>Foto Diri</label><br>
-        <input type="file"><br>
-          <input type="submit" value="Login"><br>
-        
-    </form></div>
+        <label>Jabatan</label><br />
+        <select>
+          <option disabled>Pilih</option>
+          <option>admin</option>
+          <option>superadmin</option>
+          <option>user</option></select
+        ><br />
+
+        <label>Hobi</label><br />
+        <input type="checkbox" /> Membaca <br />
+        <input type="checkbox" /> Menulis <br />
+        <input type="checkbox" /> Menyanyi <br />
+        <input type="checkbox" /> Olahraga <br />
+
+        <label>Alamat</label><br />
+        <textarea placeholder="Alamat Lengkap"></textarea><br />
+
+        <label>Foto Diri</label><br />
+        <input type="file" /><br />
+        <input type="submit" value="Login" /><br />
+      </form>
+    </div>
   </body>
 </html>
