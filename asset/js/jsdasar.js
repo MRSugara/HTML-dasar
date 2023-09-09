@@ -35,6 +35,7 @@ document.write(`<p>${typeof penjumlahan}</p>`)
 let penjumlahanToString = String(penjumlahan)
 console.log(penjumlahanToString)
 console.log(typeof penjumlahanToString);
+
 document.write(`<p>${penjumlahanToString}</p>`)
 document.write(`<p>${typeof penjumlahanToString}</p>`)
 
