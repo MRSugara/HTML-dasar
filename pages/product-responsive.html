@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../asset/product.css" />
+    <link rel="stylesheet" href="../asset/product-responsive.css" />
     <title>Homepage</title>
   </head>
   <body>
@@ -76,6 +76,7 @@
               >Product-Resp</a
             >
           </li>
+
           <li>
             <img src="../asset/img/informatika.jfif" alt="..." class="top1" />
           </li>
@@ -86,31 +87,32 @@
       <div>
         <h1 class="h1">Rekomendasi Monitor ditahun 2023</h1>
       </div>
-      <div class="satuan">
-        <div class="border">
-          <img src="../asset/img/koorui.jpeg" alt="..." class="img" />
-          <div class="desc1">Koorui 24E4</div>
+      <div class="list">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="../asset/img/aoc.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../asset/img/samsung.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../asset/img/lg.avif" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="border">
-          <img src="../asset/img/aoc24eg2e5.jpeg" alt="..." class="img" />
-          <div class="desc1">AOC 24EG2E5</div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-        <div class="border">
-          <img src="../asset/img/asus249qgr.jpeg" alt="..." class="img" />
-          <div class="desc1">Asus 249QGR</div>
-        </div>
-        <div class="border">
-          <img src="../asset/img/msig241vc.jpeg" alt="..." class="img" />
-          <div class="desc1">MSI G241VC</div>
-        </div>
-        <div class="border">
-          <img src="../asset/img/samsungcr24f390.jpeg" alt="..." class="img" />
-          <div class="desc1">Samsung CR24F390</div>
-        </div>
-        <div class="border">
-          <img src="../asset/img/samsungsr35.jpeg" alt="..." class="img" />
-          <div class="desc1">Samsung SR35</div>
-        </div>
+
+        <div class="satuan" id="satuan"></div>
       </div>
     </div>
 
@@ -120,5 +122,6 @@
         ~~&#9884; Panas Panas Kum Kum, Assalamu'alaikum &#9884;~~
       </p>
     </div>
+    <script src="../asset/js/product-responsive.js"></script>
   </body>
 </html>
