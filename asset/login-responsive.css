@@ -121,7 +121,7 @@ body {
     padding: 20px;
     font-size: 18px;
     font-weight: 400;
-    height: 1000px;
+    height: 100%;
     font-family: "Montserrat";
     display: flex;
     justify-content: center;
@@ -177,6 +177,44 @@ body {
     width: 600px;
 }
 
+#nav-icon {
+    display: none;
+}
+
 input {
     margin-bottom: 10px;
+}
+
+.vid {
+    width: 300px;
+}
+
+@media (max-width: 1144px) {
+
+    #nav-list {
+        display: none;
+    }
+
+    #nav-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .isian {
+        width: 70%;
+    }
+
+    .akun {
+        display: none;
+    }
+
+    .vid {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 90%;
+    }
 }

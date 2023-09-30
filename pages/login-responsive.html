@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../asset/login-responsive.css" />
 
-
+<script src="https://unpkg.com/feather-icons"></script>
   <title>Login</title>
 </head>
 
@@ -43,36 +43,40 @@
           <div class="lastname">Com</div>
         </div>
         <ul class="atasan">
-          <li><a href="../index.html" class="beranda">Beranda</a></li>
-          <li><a href="../pages/form.html" class="beranda">Form</a></li>
-          <li><a href="../pages/login.html" class="beranda">Login</a></li>
-          <li><a href="../pages/product.html" class="beranda">Product</a></li>
-          <li><a href="../pages/jsdasar.html" class="beranda">JSDasar</a></li>
-          <li><a href="../pages/landing.html" class="beranda">Landing</a></li>
+          <li><a href="../index.html" class="top1" id="nav-list">Beranda</a></li>
+          <li><a href="../pages/form.html" class="top1" id="nav-list">Form</a></li>
+          <li><a href="../pages/login.html" class="top1" id="nav-list">Login</a></li>
+          <li><a href="../pages/product.html" class="top1" id="nav-list">Product</a></li>
+          <li><a href="../pages/jsdasar.html" class="top1" id="nav-list">JSDasar</a></li>
+          <li><a href="../pages/landing.html" class="top1" id="nav-list">Landing</a></li>
           <li>
-              <a href="../pages/landingdom.html" class="beranda">LandingDom</a>
+            <a href="../pages/landingdom.html" class="top1" id="nav-list">LandingDom</a>
+          </li>
+          <li>
+            <a href="../pages/productarray.html" class="top1" id="nav-list">ProductArray</a>
+          </li>
+          <li>
+            <a href="../pages/productapi.html" class="top1" id="nav-list">Product API</a>
+          </li>
+          <li>
+            <a href="../pages/login-responsive.html" class="top1" id="nav-list">Login-Resp</a>
+          </li>
+          <li>
+            <a href="../pages/product-responsive.html" class="top1" id="nav-list">Product-Resp</a>
+          </li>
+            <li>
+              <a href="../pages/login-v2.html" class="top1" id="nav-list">Login-Layout</a>
             </li>
             <li>
-              <a href="../pages/productarray.html" class="beranda"
-                >ProductArray</a
-              >
+              <a href="../index3.html" class="top1" id="nav-list">Dashboard</a>
             </li>
+          <li>
+            <a href="#" class="top1" id="nav-icon"><i data-feather="align-justify"></i></a>
+          </li>
 
-            <li>
-              <a href="../pages/productapi.html" class="beranda">Product API</a>
-            </li>
-            <li>
-              <a href="../pages/login-responsive.html" class="beranda"
-                >Login-Resp</a
-              >
-            </li>
-            <li>
-              <a href="../pages/product-responsive.html" class="beranda"
-                >Product-Resp</a
-              >
-            </li>
-
-          <li><img src="../asset/img/informatika.jfif" alt="..." /></li>
+          <li>
+            <img src="../asset/img/informatika.jfif" alt="..." class="top1" />
+          </li>
         </ul>
       </nav>
     </div>
@@ -97,7 +101,7 @@
           </div>
           
           <div class="deskripsi3">
-            <video controls src="../asset/vid/Wish You Were Here.mp4" width="300px"></video>
+            <video controls src="../asset/vid/Wish You Were Here.mp4" class="vid"></video>
             <br />
           </div>
         </div>
@@ -106,6 +110,10 @@
     </div>
   </div>
   </div>
+
+  <script>
+      feather.replace();
+    </script>
 </body>
 
 </html>
